@@ -1,3 +1,4 @@
+// Folder Definitions
 folder('Job-DSL') {
     displayName('Job-DSL')
 }
@@ -52,44 +53,14 @@ folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
     displayName('Redis')
-     definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
-                        credentials('git-cred')  
-                    }
-                    branch('Sharvari-SCRUM-223')
-                }
-            }
-            scriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy') 
-        }
-    }
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook') {
     displayName('Playbook')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/Redis') {
-    displayName('Redis')
-}
-
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/PostgreSQL') {
     displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/ScyllaDB') {
-    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment') {
@@ -170,4 +141,27 @@ folder('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
 
 folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
+}
+
+// Job Definition for Redis (example)
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
+    displayName('Redis Job')
+    description('Job to deploy Redis from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Sharvari-SCRUM-223')
+        }
+    }
+
+    steps {
+        // Example of a step using a Groovy script for the job
+        dsl {
+            scriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
+        }
+    }
 }
