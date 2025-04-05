@@ -143,13 +143,9 @@ folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
-// Job Definition for Redis (example)
-job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
-    displayName('Redis Job')
-    description('Job to deploy Redis from GitHub repository')
 
-job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
-    displayName('Redis Job')
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
+    displayName('Job-DSL')
     description('Job to deploy Redis from GitHub repository')
 
     scm {
