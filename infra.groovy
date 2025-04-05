@@ -289,3 +289,277 @@ job('Job-DSL/Env/Dev/Infra/Database/Redis') {
     }
  
 }
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Application/Employee') {
+    displayName('Job-DSL')
+    description('Job Employee Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Prashant-SCRUM-301')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Static/Dev Infra/Applications/Employee/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Application/Salary') {
+    displayName('Job-DSL')
+    description('Job Salary Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Aman-SCRUM-294')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Static/Dev Infra/Applications/Salary/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Application/Attendance') {
+    displayName('Job-DSL')
+    description('Job Attendance Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Shubhanshi-SCRUM-287')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Static/Dev Infra/Applications/Attendance/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+############################################################
+job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
+    displayName('Job-DSL')
+    description('Job Frontend Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Rohit-SCRUM-280')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Static/Dev Infra/Applications/Frontend/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
+    displayName('Job-DSL')
+    description('Job Frontend Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('main')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Static/Dev Infra/Network Skeleton/DSLscript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+############################################################
+job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
+    displayName('Job-DSL')
+    description('Job For Redis configuration from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Nikita-SCRUM-325')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CD/Configuration/Redis/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+
+############################################################
+job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgeSQL') {
+    displayName('Job-DSL')
+    description('Job For PostgeSQL configuration from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Aayush-SCRUM-320')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CD/Postgresql/Configuration/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
+    displayName('Job-DSL')
+    description('Job For ScyllaDB configuration from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Pooja-SCRUM-315')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CD/Scylladb/Configuration/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
+    displayName('Job-DSL')
+    description('Job For Redis CI from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Aman-SCRUM-322')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CI/Redis/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL') {
+    displayName('Job-DSL')
+    description('Job For PostgreSQL CI from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Mohit-SCRUM-317')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CI/Postgres/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/CI/Ansible/Role/ScyllaDB') {
+    displayName('Job-DSL')
+    description('Job For ScyllaDB CI from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Ramratan-SCRUM-312')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CI/Scylla_DB/Job_DSL.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
