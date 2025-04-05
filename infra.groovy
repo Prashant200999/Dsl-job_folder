@@ -143,56 +143,31 @@ folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
-job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL Redis Deployment')
-    description('Job to deploy Redis from GitHub repository')
-
-definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
-                        credentials('git-cred')
-                    }
-                    branch('Sharvari-SCRUM-323')
-                }
-            }
-            scriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy') 
-        }
-    }
-
-
-
-
-
-
-
-
-
-
 
 
 
 // Job Definition inside Folder
-// job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
-//     displayName('Job-DSL Redis Deployment')
-//     description('Job to deploy Redis from GitHub repository')
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
+    displayName('Job-DSL Redis Deployment')
+    description('Job to deploy Redis from GitHub repository')
 
-//     scm {
-//         git {
-//             remote {
-//                 url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
-//                 credentials('git-cred')
-//             }
-//             branch('Sharvari-SCRUM-223')
-//         }
-//     }
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Sharvari-SCRUM-223')
+        }
+    }
 
-//     steps {
-//         // Use setScriptText for Groovy script
-//         dsl {
-//             setScriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
-//         }
-//     }
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            setScriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
+        }
+    }
+
+
+    
 }
