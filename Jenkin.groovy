@@ -1,159 +1,131 @@
-folder('Job-DSL') {
-    displayName('Job-DSL')
+folder('POC') {
+    displayName('POC')
 }
 
-folder('Job-DSL/Env') {
-    displayName('Env')
+folder('POC/CI-Checks') {
+    displayName('CI-Checks')
 }
 
-folder('Job-DSL/Env/Dev') {
-    displayName('Dev')
+folder('POC/CI-Checks/Declarative') {
+    displayName('Declarative')
 }
 
-folder('Job-DSL/Env/Dev/CI') {
-    displayName('CI')
+folder('POC/CI-Checks/Declarative/Generic') {
+    displayName('Generic')
 }
 
-folder('Job-DSL/Env/Dev/CI/Ansible') {
+folder('POC/CI-Checks/Declarative/Java') {
+    displayName('Java')
+}
+
+folder('POC/CI-Checks/Declarative/Python') {
+    displayName('Python')
+}
+
+folder('POC/CI-Checks/Declarative/Golang') {
+    displayName('Golang')
+}
+
+folder('POC/CI-Checks/Declarative/React') {
+    displayName('React')
+}
+
+folder('POC/CI-Checks/Declarative/Ansible') {
     displayName('Ansible')
 }
 
-folder('Job-DSL/Env/Dev/CI/Ansible/Role') {
-    displayName('Role')
-}
-
-folder('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/CI/Ansible/Playbook') {
+folder('POC/CI-Checks/Declarative/Ansible/Playbook') {
     displayName('Playbook')
 }
 
-folder('Job-DSL/Env/Dev/CI/Ansible/Playbook/Redis') {
-    displayName('Redis')
+folder('POC/CI-Checks/Declarative/Terraform') {
+    displayName('Terraform')
 }
 
-folder('Job-DSL/Env/Dev/CD') {
+folder('POC/CI-Checks/Declarative/Terraform/Module') {
+    displayName('Module')
+}
+
+folder('POC/CI-Checks/Scripted') {
+    displayName('Scripted')
+}
+
+folder('POC/CI-Checks/Scripted/Generic') {
+    displayName('Generic')
+}
+
+folder('POC/CI-Checks/Scripted/Java') {
+    displayName('Java')
+}
+
+folder('POC/CI-Checks/Scripted/Python') {
+    displayName('Python')
+}
+
+folder('POC/CI-Checks/Scripted/Golang') {
+    displayName('Golang')
+}
+
+folder('POC/CI-Checks/Scripted/React') {
+    displayName('React')
+}
+
+folder('POC/CI-Checks/Shared-Library') {
+    displayName('Shared-Library')
+}
+
+folder('POC/CI-Checks/Shared-Library/Generic') {
+    displayName('Generic')
+}
+
+folder('POC/CI-Checks/Shared-Library/Java') {
+    displayName('Java')
+}
+
+folder('POC/CI-Checks/Shared-Library/Python') {
+    displayName('Python')
+}
+
+folder('POC/CI-Checks/Shared-Library/Golang') {
+    displayName('Golang')
+}
+
+folder('POC/CI-Checks/Shared-Library/React') {
+    displayName('React')
+}
+
+folder('POC/CI-Checks/Shared-Library/Ansible') {
+    displayName('Ansible')
+}
+
+folder('POC/CI-Checks/Shared-Library/Ansible/Playbook') {
+    displayName('Playbook')
+}
+
+folder('POC/CI-Checks/Shared-Library/Ansible/Role') {
+    displayName('Role')
+}
+
+folder('POC/CD') {
     displayName('CD')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery') {
-    displayName('Delivery')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible') {
+folder('POC/CD/Ansible') {
     displayName('Ansible')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
+folder('POC/CD/Ansible/Role') {
     displayName('Role')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook') {
+folder('POC/CD/Ansible/Playbook') {
     displayName('Playbook')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/Redis') {
-    displayName('Redis')
+folder('POC/CD/Terraform') {
+    displayName('Terraform')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/ScyllaDB') {
-    displayName('ScyllaDB')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment') {
-    displayName('Deployment')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible') {
-    displayName('Ansible')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role') {
-    displayName('Role')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook') {
-    displayName('Playbook')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/ScyllaDB') {
-    displayName('ScyllaD')
-}
-
-folder('Job-DSL/Env/Dev/Infra') {
-    displayName('Infra')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Application') {
-    displayName('Application')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Application/Frontend') {
-    displayName('Frontend')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Application/Salary') {
-    displayName('Salary')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Application/Employee') {
-    displayName('Employee')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Application/Attendance') {
-    displayName('Attendance')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Database') {
-    displayName('Database')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Database/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
-    displayName('ScyllaDB')
+folder('POC/CD/Terraform/Module') {
+    displayName('Module')
 }
