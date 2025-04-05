@@ -43,7 +43,7 @@ folder('Job-DSL/Env/Dev/CD/Delivery') {
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible') {
-    displayName('Delivery')
+    displayName('Ansible')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
