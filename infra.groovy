@@ -143,12 +143,9 @@ folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
-
-
-
-// Job Definition inside Folder
+############################################################
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL Redis Deployment')
+    displayName('Job-DSL')
     description('Job to deploy Redis from GitHub repository')
 
     scm {
@@ -164,16 +161,131 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
     steps {
         // Use setScriptText for Groovy script
         dsl {
-             // setScriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy')
             external('CD/Ansible/Role/Redis/Ansible_CD.groovy')
             lookupStrategy('SEED_JOB')
         }
     }
+ 
+}
+############################################################
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL/Job-DSL') {
+    displayName('Job-DSL')
+    description('Job to deploy PostgreSQL from GitHub repository')
 
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Anuj-SCRUM-318')
+        }
+    }
 
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CD/Ansible/Role/Postgres/Ansible_CD.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+############################################################
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
+    displayName('Job-DSL')
+    description('Job to deploy ScyllaDB from GitHub repository')
 
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Pravesh-SCRUM-313')
+        }
+    }
 
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('CD/ScyllaDB/scyllaDB.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+############################################################
+job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
+    displayName('Job-DSL')
+    description('Job PostgreSQL Infra from GitHub repository')
 
-    
-    
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Shashi-SCRUM-310')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Infra/Database/PostgreSQL/infra.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
+    displayName('Job-DSL')
+    description('Job ScyllaDB Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Shubhanshi-SCRUM-307')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Infra/Database/Scylla/DSLScript.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
+}
+
+############################################################
+job('Job-DSL/Env/Dev/Infra/Database/Redis') {
+    displayName('Job-DSL')
+    description('Job Redis Infra from GitHub repository')
+
+    scm {
+        git {
+            remote {
+                url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                credentials('git-cred')
+            }
+            branch('Sharvari-SCRUM-304')
+        }
+    }
+
+    steps {
+        // Use setScriptText for Groovy script
+        dsl {
+            external('Infra/Database/Redis/infra.groovy')
+            lookupStrategy('SEED_JOB')
+        }
+    }
+ 
 }
