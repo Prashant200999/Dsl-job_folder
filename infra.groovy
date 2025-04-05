@@ -43,7 +43,7 @@ folder('Job-DSL/Env/Dev/CD/Delivery') {
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible') {
-    displayName('Delivery')
+    displayName('Ansible')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
@@ -111,49 +111,49 @@ folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/Redis') {
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/PostgreSQL') {
-    displayName('PostgreSQL Playbook Folder')
+    displayName('PostgreSQL')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/ScyllaDB') {
-    displayName('ScyllaDB Playbook Folder')
+    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/Infra') {
-    displayName('Infra Folder')
+    displayName('Infra')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Application') {
-    displayName('Application Folder')
+    displayName('Application')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Application/Frontend') {
-    displayName('Frontend Folder')
+    displayName('Frontend')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Application/Salary') {
-    displayName('Salary Folder')
+    displayName('Salary')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Application/Employee') {
-    displayName('Employee Folder')
+    displayName('Employee')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Application/Attendance') {
-    displayName('Attendance Folder')
+    displayName('Attendance')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database') {
-    displayName('Database Folder')
+    displayName('Database')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database/Redis') {
-    displayName('Redis Database Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
-    displayName('PostgreSQL Database Folder')
+    displayName('PostgreSQL ')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
-    displayName('ScyllaDB Database Folder')
+    displayName('ScyllaDB')
 }
