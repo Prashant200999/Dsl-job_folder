@@ -136,16 +136,16 @@ folder('Job-DSL/Env/Dev/Infra/Database/Redis') {
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
-    displayName('PostgreSQL ')
+    displayName('PostgreSQL')
 }
 
 folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
-
+// Job Definition inside Folder
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL')
+    displayName('Job-DSL Redis Deployment')
     description('Job to deploy Redis from GitHub repository')
 
     scm {
@@ -159,11 +159,9 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
     }
 
     steps {
-        // Use setScriptText instead of scriptText
+        // Use setScriptText for Groovy script
         dsl {
             setScriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
         }
     }
-}
-
 }
