@@ -80,7 +80,9 @@ folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL') {
     displayName('PostgreSQL')
 }
-
+folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
+    displayName('ScyllaDB')
+}
 folder('Job-DSL/Env/Dev/Infra') {
     displayName('Infra')
 }
