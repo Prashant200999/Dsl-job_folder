@@ -111,6 +111,9 @@ folder('Job-DSL/Env/Dev/Infra/Application/Employee') {
 folder('Job-DSL/Env/Dev/Infra/Application/Attendance') {
     displayName('Attendance')
 }
+folder('Job-DSL/Env/Dev/Infra/Application/Network Skeleton') {
+    displayName('Frontend')
+}
 
 folder('Job-DSL/Env/Dev/Infra/Database') {
     displayName('Database')
