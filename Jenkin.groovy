@@ -1,113 +1,113 @@
 folder('Job-DSL') {
-    displayName('Job DSL Folder')
+    displayName('Job-DSL')
 }
 
 folder('Job-DSL/Env') {
-    displayName('Environment Folder')
+    displayName('Env')
 }
 
 folder('Job-DSL/Env/Dev') {
-    displayName('Development Folder')
+    displayName('Dev')
 }
 
 folder('Job-DSL/Env/Dev/CI') {
-    displayName('CI Folder')
+    displayName('CI')
 }
 
 folder('Job-DSL/Env/Dev/CI/Ansible') {
-    displayName('Ansible Folder')
+    displayName('Ansible')
 }
 
 folder('Job-DSL/Env/Dev/CI/Ansible/Role') {
-    displayName('Role Folder')
+    displayName('Role')
 }
 
 folder('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
-    displayName('Redis Role Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CI/Ansible/Playbook') {
-    displayName('Playbook Folder')
+    displayName('Playbook')
 }
 
 folder('Job-DSL/Env/Dev/CI/Ansible/Playbook/Redis') {
-    displayName('Redis Playbook Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CD') {
-    displayName('CD Folder')
+    displayName('CD')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery') {
-    displayName('Delivery Folder')
+    displayName('Delivery')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible') {
-    displayName('Delivery Ansible Folder')
+    displayName('Delivery')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
-    displayName('Delivery Ansible Role Folder')
+    displayName('Role')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
-    displayName('Redis Role Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL') {
-    displayName('PostgreSQL Role Folder')
+    displayName('PostgreSQL')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB Role Folder')
+    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook') {
-    displayName('Delivery Playbook Folder')
+    displayName('Playbook')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/Redis') {
-    displayName('Redis Playbook Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/PostgreSQL') {
-    displayName('PostgreSQL Playbook Folder')
+    displayName('PostgreSQL')
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/ScyllaDB') {
-    displayName('ScyllaDB Playbook Folder')
+    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment') {
-    displayName('Deployment Folder')
+    displayName('Deployment')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible') {
-    displayName('Deployment Ansible Folder')
+    displayName('Ansible')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role') {
-    displayName('Deployment Ansible Role Folder')
+    displayName('Role')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
-    displayName('Redis Role Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL') {
-    displayName('PostgreSQL Role Folder')
+    displayName('PostgreSQL')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB Role Folder')
+    displayName('ScyllaDB')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook') {
-    displayName('Deployment Playbook Folder')
+    displayName('Playbook')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/Redis') {
-    displayName('Redis Playbook Folder')
+    displayName('Redis')
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/PostgreSQL') {
