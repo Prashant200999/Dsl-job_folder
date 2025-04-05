@@ -88,7 +88,9 @@ folder('Job-DSL/Env/Dev/Infra') {
 folder('Job-DSL/Env/Dev/Infra/Application') {
     displayName('Application')
 }
-
+folder('Job-DSL/Env/Dev/Infra/Network Skeleton') {
+    displayName('Network Skeleton')
+}
 folder('Job-DSL/Env/Dev/Infra/Application/Frontend') {
     displayName('Frontend')
 }
@@ -124,7 +126,7 @@ folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
 
 // Job Definitions for CD Delivery
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL - Redis Delivery')
+    displayName('Job-DSL')
     description('Job to deploy Redis from GitHub repository')
 
     scm {
@@ -146,7 +148,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL/Job-DSL') {
-    displayName('Job-DSL - PostgreSQL Delivery')
+    displayName('Job-DSL')
     description('Job to deploy PostgreSQL from GitHub repository')
 
     scm {
@@ -168,7 +170,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
-    displayName('Job-DSL - ScyllaDB Delivery')
+    displayName('Job-DSL')
     description('Job to deploy ScyllaDB from GitHub repository')
 
     scm {
@@ -191,7 +193,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
 
 // Job Definitions for Infra Database
 job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL/Job-DSL') {
-    displayName('Job-DSL - PostgreSQL Infra')
+    displayName('Job-DSL')
     description('Job PostgreSQL Infra from GitHub repository')
 
     scm {
@@ -213,7 +215,7 @@ job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB/Job-DSL') {
-    displayName('Job-DSL - ScyllaDB Infra')
+    displayName('Job-DSL')
     description('Job ScyllaDB Infra from GitHub repository')
 
     scm {
@@ -235,7 +237,7 @@ job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/Infra/Database/Redis/Job-DSL') {
-    displayName('Job-DSL - Redis Infra')
+    displayName('Job-DSL')
     description('Job Redis Infra from GitHub repository')
 
     scm {
@@ -258,7 +260,7 @@ job('Job-DSL/Env/Dev/Infra/Database/Redis/Job-DSL') {
 
 // Job Definitions for Infra Application
 job('Job-DSL/Env/Dev/Infra/Application/Employee/Job-DSL') {
-    displayName('Job-DSL - Employee Infra')
+    displayName('Job-DSL')
     description('Job Employee Infra from GitHub repository')
 
     scm {
@@ -280,7 +282,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Employee/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/Infra/Application/Salary/Job-DSL') {
-    displayName('Job-DSL - Salary Infra')
+    displayName('Job-DSL')
     description('Job Salary Infra from GitHub repository')
 
     scm {
@@ -302,7 +304,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Salary/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/Infra/Application/Attendance/Job-DSL') {
-    displayName('Job-DSL - Attendance Infra')
+    displayName('Job-DSL')
     description('Job Attendance Infra from GitHub repository')
 
     scm {
@@ -324,7 +326,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Attendance/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/Infra/Application/Frontend/Job-DSL') {
-    displayName('Job-DSL - Frontend Infra')
+    displayName('Job-DSL')
     description('Job Frontend Infra from GitHub repository')
 
     scm {
@@ -345,8 +347,8 @@ job('Job-DSL/Env/Dev/Infra/Application/Frontend/Job-DSL') {
     }
 }
 
-job('Job-DSL/Env/Dev/Infra/Application/Network Skeleton/Job-DSL') {
-    displayName('Job-DSL - Network Skeleton Infra')
+job('Job-DSL/Env/Dev/Infra/Network Skeleton/Job-DSL') {
+    displayName('Job-DSL')
     description('Job Frontend Infra from GitHub repository')
 
     scm {
@@ -369,7 +371,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Network Skeleton/Job-DSL') {
 
 // Job Definitions for CD Deployment
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL - Redis Deployment')
+    displayName('Job-DSL')
     description('Job For Redis configuration from GitHub repository')
 
     scm {
@@ -391,7 +393,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL/Job-DSL') {
-    displayName('Job-DSL - PostgreSQL Deployment')
+    displayName('Job-DSL')
     description('Job For PostgreSQL configuration from GitHub repository')
 
     scm {
@@ -413,7 +415,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB/Job-DSL') {
-    displayName('Job-DSL - ScyllaDB Deployment')
+    displayName('Job-DSL')
     description('Job For ScyllaDB configuration from GitHub repository')
 
     scm {
@@ -436,7 +438,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB/Job-DSL') {
 
 // Job Definitions for CI Ansible Roles
 job('Job-DSL/Env/Dev/CI/Ansible/Role/Redis/Job-DSL') {
-    displayName('Job-DSL - Redis CI')
+    displayName('Job-DSL')
     description('Job For Redis CI from GitHub repository')
 
     scm {
@@ -458,7 +460,7 @@ job('Job-DSL/Env/Dev/CI/Ansible/Role/Redis/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL/Job-DSL') {
-    displayName('Job-DSL - PostgreSQL CI')
+    displayName('Job-DSL')
     description('Job For PostgreSQL CI from GitHub repository')
 
     scm {
@@ -480,7 +482,7 @@ job('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL/Job-DSL') {
 }
 
 job('Job-DSL/Env/Dev/CI/Ansible/Role/ScyllaDB/Job-DSL') {
-    displayName('Job-DSL - ScyllaDB CI')
+    displayName('Job-DSL')
     description('Job For ScyllaDB CI from GitHub repository')
 
     scm {
