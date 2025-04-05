@@ -143,7 +143,7 @@ folder('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
     displayName('Job-DSL')
     description('Job to deploy Redis from GitHub repository')
@@ -167,7 +167,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
     }
  
 }
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL/Job-DSL') {
     displayName('Job-DSL')
     description('Job to deploy PostgreSQL from GitHub repository')
@@ -191,7 +191,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL/Job-DSL') {
     }
  
 }
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
     displayName('Job-DSL')
     description('Job to deploy ScyllaDB from GitHub repository')
@@ -215,7 +215,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
     }
  
 }
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
     displayName('Job-DSL')
     description('Job PostgreSQL Infra from GitHub repository')
@@ -240,7 +240,7 @@ job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('Job-DSL')
     description('Job ScyllaDB Infra from GitHub repository')
@@ -265,7 +265,7 @@ job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Database/Redis') {
     displayName('Job-DSL')
     description('Job Redis Infra from GitHub repository')
@@ -290,7 +290,7 @@ job('Job-DSL/Env/Dev/Infra/Database/Redis') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Application/Employee') {
     displayName('Job-DSL')
     description('Job Employee Infra from GitHub repository')
@@ -315,7 +315,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Employee') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Application/Salary') {
     displayName('Job-DSL')
     description('Job Salary Infra from GitHub repository')
@@ -340,7 +340,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Salary') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Application/Attendance') {
     displayName('Job-DSL')
     description('Job Attendance Infra from GitHub repository')
@@ -364,7 +364,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Attendance') {
     }
  
 }
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
     displayName('Job-DSL')
     description('Job Frontend Infra from GitHub repository')
@@ -389,7 +389,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
     displayName('Job-DSL')
     description('Job Frontend Infra from GitHub repository')
@@ -413,7 +413,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
     }
  
 }
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
     displayName('Job-DSL')
     description('Job For Redis configuration from GitHub repository')
@@ -439,7 +439,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/Redis') {
 }
 
 
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgeSQL') {
     displayName('Job-DSL')
     description('Job For PostgeSQL configuration from GitHub repository')
@@ -464,7 +464,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgeSQL') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
     displayName('Job-DSL')
     description('Job For ScyllaDB configuration from GitHub repository')
@@ -489,7 +489,7 @@ job('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
     displayName('Job-DSL')
     description('Job For Redis CI from GitHub repository')
@@ -514,7 +514,7 @@ job('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL') {
     displayName('Job-DSL')
     description('Job For PostgreSQL CI from GitHub repository')
@@ -539,7 +539,7 @@ job('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL') {
  
 }
 
-############################################################
+
 job('Job-DSL/Env/Dev/CI/Ansible/Role/ScyllaDB') {
     displayName('Job-DSL')
     description('Job For ScyllaDB CI from GitHub repository')
