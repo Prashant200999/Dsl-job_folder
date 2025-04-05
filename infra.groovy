@@ -226,42 +226,6 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB/Job-DSL') {
 // }
 
 
-
-
-
-
-
-
-pipelineJob('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
-                        credentials('git-cred')
-                    }
-                    branch('Shashi-SCRUM-310')
-                }
-            }
-        }
-    }
-    steps {
-        // Use setScriptText for Groovy script
-        dsl {
-            external('Infra/Database/PostgreSQL/infra.groovy')
-            lookupStrategy('SEED_JOB')
-        }
-    }
-}
-
-
-
-
-
-
-
-
 job('Job-DSL/Env/Dev/Infra/Database/ScyllaDB') {
     displayName('Job-DSL')
     description('Job ScyllaDB Infra from GitHub repository')
