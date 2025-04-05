@@ -52,6 +52,20 @@ folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role') {
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
     displayName('Redis')
+     definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
+                        credentials('git-cred')  
+                    }
+                    branch('Sharvari-SCRUM-223')
+                }
+            }
+            scriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy') 
+        }
+    }
 }
 
 folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL') {
