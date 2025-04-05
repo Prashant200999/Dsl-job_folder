@@ -157,7 +157,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
                 url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
                 credentials('git-cred')
             }
-            branch('Sharvari-SCRUM-223')
+            branch('Sharvari-SCRUM-323')
         }
     }
 
