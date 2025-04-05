@@ -211,7 +211,7 @@ job('Job-DSL/Env/Dev/Infra/Database/PostgreSQL') {
                 url('https://github.com/snaatak-Zero-Downtime-Crew/job-dsl.git')
                 credentials('git-cred')
             }
-            branch('Shashi-SCRUM-310')
+            branch('main')
         }
     }
 
