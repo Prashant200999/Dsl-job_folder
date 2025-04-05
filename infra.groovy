@@ -164,7 +164,7 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis/Job-DSL') {
     steps {
         // Use setScriptText for Groovy script
         dsl {
-            setScriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy')
+            scriptPath('CD/Ansible/Role/Redis/Ansible_CD.groovy')
         }
     }
 
