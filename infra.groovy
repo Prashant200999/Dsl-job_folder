@@ -27,13 +27,14 @@ folder('Job-DSL/Env/Dev/CI/Ansible/Role/Redis') {
     displayName('Redis')
 }
 
-folder('Job-DSL/Env/Dev/CI/Ansible/Playbook') {
-    displayName('Playbook')
+folder('Job-DSL/Env/Dev/CI/Ansible/Role/PostgreSQL') {
+    displayName('PostgreSQL')
 }
 
-folder('Job-DSL/Env/Dev/CI/Ansible/Playbook/Redis') {
-    displayName('Redis')
+folder('Job-DSL/Env/Dev/CI/Ansible/Role/ScyllaDB') {
+    displayName('ScyllaDB')
 }
+
 
 folder('Job-DSL/Env/Dev/CD') {
     displayName('CD')
@@ -55,13 +56,13 @@ folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
     displayName('Redis')
 }
 
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook') {
-    displayName('Playbook')
-}
-
-folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Playbook/PostgreSQL') {
+folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/PostgreSQL') {
     displayName('PostgreSQL')
 }
+folder('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/ScyllaDB') {
+    displayName('ScyllaDB')
+}
+
 
 folder('Job-DSL/Env/Dev/CD/Deployment') {
     displayName('Deployment')
@@ -84,22 +85,6 @@ folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/PostgreSQL') {
 }
 
 folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Role/ScyllaDB') {
-    displayName('ScyllaDB')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook') {
-    displayName('Playbook')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/Redis') {
-    displayName('Redis')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/PostgreSQL') {
-    displayName('PostgreSQL')
-}
-
-folder('Job-DSL/Env/Dev/CD/Deployment/Ansible/Playbook/ScyllaDB') {
     displayName('ScyllaDB')
 }
 
@@ -390,7 +375,7 @@ job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
 }
 
 
-job('Job-DSL/Env/Dev/Infra/Application/Frontend') {
+job('Job-DSL/Env/Dev/Infra/Application/Network Skeleton') {
     displayName('Job-DSL')
     description('Job Frontend Infra from GitHub repository')
 
