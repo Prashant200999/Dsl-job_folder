@@ -148,6 +148,10 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
     displayName('Redis Job')
     description('Job to deploy Redis from GitHub repository')
 
+job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
+    displayName('Redis Job')
+    description('Job to deploy Redis from GitHub repository')
+
     scm {
         git {
             remote {
@@ -159,9 +163,11 @@ job('Job-DSL/Env/Dev/CD/Delivery/Ansible/Role/Redis') {
     }
 
     steps {
-        // Example of a step using a Groovy script for the job
+        // Use setScriptText instead of scriptText
         dsl {
-            scriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
+            setScriptText('CD/Ansible/Role/Redis/Ansible_CD.groovy')
         }
     }
+}
+
 }
